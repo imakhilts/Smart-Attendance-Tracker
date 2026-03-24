@@ -30,7 +30,7 @@ faiss.write_index(index, "faces.index")
 with open("labels.pkl", "wb") as f:
     pickle.dump(labels, f)
 
-print(f"🚀 Training Complete!")
+print(f"Training Complete!")
 print(f"Total Embeddings Indexed: {len(labels)}")
 print(f"Unique Students: {len(set(labels))}")
 print("FAISS Index 'faces.index' is now optimized for L2 distance.")
